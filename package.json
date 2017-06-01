@@ -1,0 +1,37 @@
+{
+  "name": "angular_map",
+  "version": "0.0.0",
+  "description": "this is example of google map api by using angular js",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhuvaneshwaranR/angular_google_map.git"
+  },
+  "keywords": [
+    "angular",
+    "google",
+    "map",
+    "angular",
+    "google",
+    "map",
+    "api",
+    "angular",
+    "google",
+    "map",
+    "api"
+  ],
+  "author": "bhuvan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BhuvaneshwaranR/angular_google_map/issues"
+  },
+  "homepage": "https://github.com/BhuvaneshwaranR/angular_google_map#readme"
+}

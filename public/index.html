@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="mapsApp">
+
+<head>
+    <title>Angular Google Map Example</title>
+    <!--  <style type="text/css" href="css/style.css">  -->
+    </style>
+    <style rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.28"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.28&&key=API_KEY"></script> -->
+    <script type="text/javascript" src="controller/mapController.js"></script>
+</head>
+<section ng-controller="MapsCtrl">
+    <div id="map"></div>
+    <div id="side-panel" class="col-md-4">
+        <div class="page-header">
+            <h1>Google Maps API with AngularJS <small>A small sample of binding markers in Google Maps the external links using AngularJS</small></h1>
+        </div>
+        <table class="table table-hover" ng-show="cities">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Team Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="city in cities | orderBy : 'name'" ng-click="openInfoWindow($event, city)" class="city">
+                    <td>{{city.name}}</td>
+                    <td>{{city.team}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<style type="text/css">
+html,
+body,
+section,
+{
+    height: 100%;
+}
+
+.city {
+    cursor: pointer;
+}
+
+#map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+}
+</style>
+
+</html>
